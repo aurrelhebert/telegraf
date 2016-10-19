@@ -11,7 +11,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker pull warp10io/warp10:1.0.16-ci
+    - docker pull warp10io/warp10:1.0.16.ci
   post:
     - gem install fpm
     - sudo apt-get install -y rpm python-boto
