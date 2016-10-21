@@ -11,6 +11,7 @@ machine:
 dependencies:
   override:
     - docker info
+    - docker build --rm=false -t warp10io/warp10 .
     - docker pull warp10io/warp10:1.0.16-ci
   post:
     - gem install fpm
